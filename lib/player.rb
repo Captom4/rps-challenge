@@ -8,6 +8,7 @@ class Player
   end
 
   def choose_hand(choice)
-    @choice = choice
+    fail 'not a possible choice' unless Game::WEAPONS.include? choice.to_sym
+    @choice = choice.to_sym
   end
 end
