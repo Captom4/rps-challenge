@@ -4,7 +4,12 @@
 <%= @game.player2.name %><br>
 <%= @game.player2.choice %><br>
 
-<%= @game.result %>
+<%= @game.result %><br>
 
-<a href="/play">Play Again</a>
-<a href="/">Reset</a>
+<form>
+<input type="button" value="Play Again" onclick="window.location.href='/play'" />
+</form>
+
+<form>
+<input type="button" value="Reset" onclick="window.location.href='/'" />
+</form>
