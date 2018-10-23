@@ -1,3 +1,27 @@
+<head>
+<style>
+body {
+    background-color: lightblue;
+}
+
+div {
+    color: black;
+    text-align: center;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+input {
+    color: black;
+    text-align: center;
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
+</head>
+
+
+<div>
 <%= @game.player1.name %><br>
 <%= @game.player1.choice %><br>
 
@@ -6,6 +30,8 @@
 
 <%= @game.result %><br>
 
+
+
 <form>
 <input type="button" value="Play Again" onclick="window.location.href='/play'" />
 </form>
@@ -13,3 +39,5 @@
 <form>
 <input type="button" value="Reset" onclick="window.location.href='/'" />
 </form>
+
+</div>
